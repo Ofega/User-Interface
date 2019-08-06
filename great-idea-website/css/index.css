@@ -46,6 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -60,7 +65,126 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.4;
+	font-size: 1.1rem;
+	font-weight: 500;
 }
 
 /* Your code starts here! */
+
+/* Layout */
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+}
+
+nav div {
+	display: inline-block;
+	width: calc(100% - 205px);
+	vertical-align: middle;
+	padding: 0 1.5rem;
+}
+
+nav div a {
+	display: inline-block;
+	width: 16.3%;
+	font-size: 1rem;
+	color: grey;
+	text-decoration: none;
+	padding: 1.5rem 0;
+}
+
+.logo {
+	width: 200px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+header {
+	white-space: nowrap;
+}
+
+header div {
+	width: 50%;
+	display: inline-block;
+	padding: 4rem 0;
+	text-align: center;
+	white-space: initial;
+	vertical-align: middle;
+}
+
+header h1 {
+	font-size: 6rem;
+	max-width: 380px;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1.1;
+	letter-spacing: 6px;
+}
+
+header button {
+	background: none;
+	border: 1px solid black;
+	margin-top: 1.5rem;
+	padding: .5rem 1rem;
+	min-width: 150px;
+	color: #000;
+	font-size: 1rem;
+}
+
+main {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.section-container section {
+	display: inline-block;
+	text-align: left;
+	padding: 2.5rem 0;
+}
+
+.col-2-grid section {
+	width: calc(50% - 17px);
+}
+
+.col-2-grid section:first-of-type {
+	margin-right: 15px;
+}
+.col-2-grid section:last-of-type {
+	margin-left: 15px;
+}
+
+.col-3-grid section {
+	width: calc(33.33% - 13px);	
+}
+
+.col-3-grid section:first-of-type {
+	margin-right: 15px;
+}
+.col-3-grid section:last-of-type {
+	margin-left: 15px;
+}
+
+footer {
+	padding-top: 2.5rem;
+}
+
+address span {
+	max-width: 200px;
+	display: block;
+	margin-top: .8rem;
+	line-height: 1.4;
+}
+
+footer p {
+	text-align: center;
+	margin: 4rem 0 2rem;
+}
